@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Orbitron&display=swap');
+/* Fuentes: Catamaran, Orbitron */
+
+body{
+    margin: 1rem;
+    background-color: #dadada;
+    overflow-y: scroll;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    width: 100%;
+}
+
+.web{
+    border-bottom: 2px solid;
+    background-color: #fefefe;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 10px;
+    align-items: center;
+    width: 80%;
+}
+
+.header{
+    display: flex;
+    box-sizing: border-box;
+    width: 60%;
+    margin: 10px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.logo{
+    width: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 75%;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.titulo{
+    border-top: 2px solid;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    font-family: "Orbitron";
+    font-weight: bolder;
+    font-size: clamp(1.125rem, 0.625rem + 1.6667vw, 2.625rem);
+    width: 60%;
+    padding: 30px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-sizing: border-box;
+    align-items: center;
+    width: 90%;
+    padding: 30px;
+}
+
+.opciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: "Catamaran";
+    font-weight: bold;
+    font-size: clamp(0.75rem, 0.5833rem + 0.5556vw, 1.25rem);
+}
+
+.fila{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    font-family: "Catamaran";
+    font-weight: bold;
+    font-size: clamp(0.75rem, 0.5833rem + 0.5556vw, 1.25rem);
+    width: 100%;
+    padding: 10px;
+}
+
+.asignaturas{
+    width: 100%;
+}
+
+.modulocheck{
+    width: 100%;
+}
+
+.nota{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.mostrarPersonasCabecera{
+    width: 80%;
+    font-family: "Catamaran";
+    font-size: clamp(0.75rem, 0.5833rem + 0.5556vw, 1.25rem);
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.mostrarPersonas{
+    border: 1px solid;
+    width: 80%;
+    font-family: "Catamaran";
+    font-size: clamp(0.75rem, 0.5833rem + 0.5556vw, 1.25rem);
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.texto{
+    border: 1px solid;
+    border-radius: 15px;
+    font-family: "Catamaran";
+    font-weight: bold;
+    font-size: clamp(0.75rem, 0.5833rem + 0.5556vw, 1.25rem);
+    text-align: center;
+    padding: 10px;
+}
+
+.texto:hover{
+    background-color: rgb(224, 224, 224);
+}
+
+.texto:focus{
+    background-color: rgb(196, 196, 196);
+}
+
+@media (max-width: 700px){
+    input{
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .fila{
+        flex-direction: column;
+    }
+
+    .texto{
+        margin: 0;
+    }
+
+    content{
+        width: 80%;
+    }
+}
+
+.botones{
+    border: 1px solid;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: "Catamaran";
+    font-weight: bold;
+    font-size: clamp(0.75rem, 0.5833rem + 0.5556vw, 1.25rem);
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    max-width: 200px;
+}
+
+.botones:hover{
+    background-color: rgb(224, 224, 224);
+}
+
+.botones:active{
+    background-color: rgb(196, 196, 196);
+    box-shadow: 0px 0px 0px 0px;
+}
+
+.botonvolver{
+    border: 1px solid;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: "Catamaran";
+    font-weight: bold;
+    font-size: clamp(0.75rem, 0.5833rem + 0.5556vw, 1.25rem);
+    padding: 7px;
+    margin: 10px;
+    width: 70%;
+    max-width: 100px;
+}
+
+.botonvolver:hover{
+    background-color: rgb(224, 224, 224);
+}
+
+.botonvolver:active{
+    background-color: rgb(196, 196, 196);
+    box-shadow: 0px 0px 0px 0px;
+}
+
+.pie{
+    padding: 10px;
+    line-height: 20px;
+    text-align: center;
+    font-family: "Catamaran";
+    font-weight: bold;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/informacion.js"></script>
+    <script src="./js/persona.js"></script>
+    <script src="./js/estudiante.js"></script>
+    <script src="./js/estudiantes.js"></script>
+    <script src="./js/programa.js"></script>
+    <title>TAREA 3 - ONLINE</title>
+</head>
+<body>
+    <div class="container">
+        <div class="web">
+
+            <div class="header">
+                <img class="logo" src="./img/logo.jpg">
+            </div>
+
+            <!-- Módulo Menú Principal -->
+            <div class="main" id="main">
+                <div class="titulo">MENU</div>
+                <div class="content">
+                    <div class="fila">ACTIVIDAD 1</div>
+                    <button class="botones" id="botonGenerar">Generar</button>
+                    <button class="botones" id="botonVerPersonas">Ver Personas</button>
+                    <button class="botones" id="botonVerEstudiantes">Ver Estudiantes</button>
+                    <button class="botones" id="botonVerNotaModulo">Ver Nota</button>
+                    <button class="botones" id="botonEditarNota">Editar Nota</button>
+                    <div class="fila">ACTIVIDAD 2</div>
+                    <button class="botones" id="botonclaseestudiantes">Clase Estudiantes</button>
+                    <div class="fila">ACTIVIDAD 2, 3 y 4</div>
+                    <button class="botones" id="botonbusquedas">Búsquedas</button>
+                </div>
+            </div>
+
+            <!-- Módulo Generar -->
+            <div class="main" id="verGenerar" style="display: none;">
+                <div class="titulo">GENERAR</div>
+                <div class="content" id="mostrarGenerar">
+                    <button class="botones" id="botonGenerarPersonas">Personas</button>
+                    <button class="botones" id="botonGenerarEstudiantes">Estudiantes</button>
+                </div>
+                <button class="botonvolver" id="volver1">Volver</button>
+            </div>
+
+            <!-- Módulo Generar Personas -->
+            <div class="main" id="verGenerarPersonas" style="display: none;">
+                <div class="titulo">GENERAR PERSONAS</div>
+                <div class="content" id="mostrarGenerarpersonas">
+                    <div class="fila">CANTIDAD</div>
+                    <div class="fila"><input class="texto" type="text" id="cantidadpersonas" placeholder="Mínimo 1"></div>
+                    <div class="fila" id="cantidadPersonasMensaje"></div>
+                    <div class="fila"><button class="botones" id="botonGenerarCantidadPersonas">GENERAR</button></div>
+                </div>
+                <button class="botonvolver" id="volver4">Volver</button>
+            </div>
+
+            <!-- Módulo Generar Estudiantes -->
+            <div class="main" id="verGenerarEstudiantes" style="display: none;">
+                <div class="titulo">GENERAR ESTUDIANTES</div>
+                <div class="content" id="mostrarGenerarEstudiantes">
+                    <div class="fila">CANTIDAD</div>
+                    <div class="fila"><input class="texto" type="text" id="cantidadestudiantes" placeholder="Mínimo 10"></div>
+                    <div class="fila" id="cantidadEstudiantesMensaje"></div>
+                    <div class="fila"><button class="botones" id="botonGenerarCantidadEstudiantes">GENERAR</button></div>
+                </div> 
+                <button class="botonvolver" id="volver5">Volver</button>
+            </div>
+
+            <!-- Módulo Ver Personas -->
+            <div class="main" id="verPersonas" style="display: none;">
+                <div class="titulo">VER PERSONAS</div>
+                <div class="content" id="mostrarPersonas"></div>
+                <button class="botonvolver" id="volver2">Volver</button>
+            </div>
+
+            <!-- Módulo Ver Estudiantes -->
+            <div class="main" id="verEstudiantes" style="display: none;">
+                <div class="titulo">VER ESTUDIANTES</div>
+                <div class="content" id="mostrarEstudiantes"></div>
+                <button class="botonvolver" id="volver3">Volver</button>
+            </div>
+
+            <!-- Módulo Ver Nota -->
+            <div class="main" id="verNota" style="display: none;">
+                <div class="titulo">VER NOTA</div>
+                <div class="content" id="mostrarvernota">
+                    <div class="fila">INTRODUZCA EL DNI</div>
+                    <div class="fila"><input class="texto" type="text" id="dniVerNota" placeholder="12345678-X"></div>
+                    <div class="fila">SELECCIONE EL MÓDULO</div>
+                    <div class="fila">
+                        <select class="texto" id="veropcionesmodulo" name="veropcionesmodulo"></select>
+                    </div>
+                    <div class="content" id="mostrarvernota2"></div>
+                    <div class="fila"><button class="botones" id="botonVerNotaDNI">BUSCAR</button></div>
+                </div>
+                <button class="botonvolver" id="volver6">Volver</button>
+            </div>
+
+            <!-- Módulo Editar Nota -->
+            <div class="main" id="editarNota" style="display: none;">
+                <div class="titulo">VER NOTA</div>
+                <div class="content" id="mostrareditarnota">
+                    <div class="fila">INTRODUZCA EL DNI</div>
+                    <div class="fila"><input class="texto" type="text" id="dniEditarNota" placeholder="12345678-X"></div>
+                    <div class="fila">SELECCIONE EL MÓDULO</div>
+                    <div class="fila">
+                        <select class="texto" id="editaropcionesmodulo" name="opcionesmodulo2"></select>
+                    </div>
+                    <div class="fila">SELECCIONE LA NOTA</div>
+                    <div class="fila">
+                        <select class="texto" id="editaropcionesnota" name="opcionesmodulonota"></select>
+                    </div>
+                    <div class="content" id="mostrareditarnota2"></div>
+                    <div class="fila"><button class="botones" id="botonEditarNotaDNI">MODIFICAR</button></div>
+                </div>
+                <button class="botonvolver" id="volver7">Volver</button>
+            </div>
+
+            <!-- Módulo Clase Estudiantes -->
+            <div class="main" id="verClaseEstudiantes" style="display: none;">
+                <div class="titulo">CLASE ESTUDIANTES</div>
+                <div class="content" id="mostrarClaseEstudiantes">
+                    <div class="fila">MÉTODO ORDENACIÓN</div>
+                    <div class="fila">ASCENDENTE</div>
+                    <div class="fila">
+                        <button class="botones" id="botonOrdenarDNI">DNI</button>
+                        <button class="botones" id="botonOrdenarFechaNac">Fecha Nacimiento</button>
+                        <button class="botones" id="botonOrdenarNotaMedia">Nota Media</button>
+                    </div>
+                    <div class="fila">DESCENDENTE</div>
+                    <div class="fila">
+                        <button class="botones" id="botonOrdenarDNIDesc">DNI</button>
+                        <button class="botones" id="botonOrdenarFechaNacDesc">Fecha Nacimiento</button>
+                        <button class="botones" id="botonOrdenarNotaMediaDesc">Nota Media</button>
+                    </div>
+                    <div class="content" id="mostrarEstudiantes2"></div>
+                </div>
+                <button class="botonvolver" id="volver8">Volver</button>
+            </div>
+
+            <!-- Módulo Buscar DNI -->
+            <div class="main" id="verBuscarPorDNI" style="display: none;">
+                <div class="titulo">CLASE ESTUDIANTES</div>
+                <div class="content" id="mostrarBuscarPorDNI">
+                    <div class="fila">BÚSQUEDA DNI</div>
+                    <div class="fila"><input class="texto" type="text" id="dniBusqueda" placeholder="12345678-X"></div>
+                    <div class="content" id="informaciondni"></div>
+                    <div class="fila">
+                        <button class="botones" id="botonSecuencial">Secuencial</button>
+                        <button class="botones" id="botonBinaria">Binaria</button>
+                    </div>
+                    <div class="content" id="mostrarEstudiante"></div>
+                    <div class="fila" id="tiempoMensaje"></div>
+                </div>
+                <button class="botonvolver" id="volver9">Volver</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="pie">Daniel Amores Corzo<br>Desarrollo Web en Entorno Cliente</div>
+</body>
+</html>
