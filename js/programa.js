@@ -375,6 +375,7 @@ function mostrarVerEstudiantes(opcion){
 
 // Función para crear las opciones de las asignaturas recibiendo el id de select
 function crearMenuAsignaturas(opcion){
+    document.getElementById(opcion).innerHTML = "";
     for(let i = 0; i < listaasignaturas.length; i++){
         let opcionasignatura = document.createElement('option');
         opcionasignatura.value = listaasignaturas[i];
@@ -385,6 +386,7 @@ function crearMenuAsignaturas(opcion){
 
 // Función para crear las opciones de las notas recibiendo el id de select
 function crearMenuNotas(opcion){
+    document.getElementById(opcion).innerHTML = "";
     for(let i = 0; i < 11; i++){
         let opcionnotas = document.createElement('option');
         opcionnotas.value = i;
